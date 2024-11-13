@@ -17,7 +17,7 @@ Important: to compile the program, a c99 or higher c compiler version is require
 - **parser.c**: implements functions and initializes predefined variables from `parser.h`. serves as the heart of the syntax analyzer.  
 - **analyzer.c**: integrates the lexical and syntax analysis modules. adds necessary functions and data structures for the semantic analyzer. serves as the main file of the analyzer.  
 
-These files are available in the [github repository](https://github.com/DanielGalindoDev?tab=repositories).
+These files are available in the [github repository]([https://github.com/DanielGalindoDev?tab=repositories](https://github.com/DanielGalindoDev/Parse-SDT)).
 
 ## Installation guide:
 **NOTE:** Ensure that a c99 or higher c compiler version is installed.
