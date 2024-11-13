@@ -50,6 +50,7 @@ Create a text file with variable initialization statements in the same folder as
 ---
 
 ## Architecture and design:
+
 ### Grammar:
 ```
 statementList → statement statementList
@@ -74,6 +75,13 @@ term → math1 term
 ### Syntax analysis:
 Uses an slr parser. semantic analysis is performed during reductions in the slr algorithm.
 
+#### diagram of lexical analyzer and parser workflow:
+<br>
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/d9ff5249-8d37-4206-abf0-0fd278ecd76d">
+<br>
+
+
+
 ### Parsing algorithm:
 ```c
 let a be the first symbol of w$;
@@ -97,6 +105,12 @@ while (1) {
 
 ### Semantic analysis:
 Semantic actions are executed during reductions. attributes of syntax tree leaves are passed upwards to the root. an example with `int a = 4;` illustrates this process.
+
+#### example of stack behavior during semantic analysis:
+<br>
+<img width="543" alt="Captura de pantalla 2024-11-12 a la(s) 8 20 24 p m" src="https://github.com/user-attachments/assets/e370842c-f163-44b3-9a4a-60d23db97aeb">
+<br>
+
 
 #### Example of semantic actions:
 | production        | semantic actions                                                                                                                                       |
@@ -148,4 +162,7 @@ typedef struct {
   - rows: states of the lr(0) automaton.
   - columns: non-terminals.
 
----
+### For more information:
+To explore the full documentation, including detailed explanations and additional examples, you can download the complete user manual here:
+[Download the full user manual](https://github.com/user-attachments/files/17725237/TEAM_6_PARSER_MANUAL.pdf)
+
