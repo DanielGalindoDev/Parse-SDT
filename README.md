@@ -1,7 +1,7 @@
 
 # Syntax and semantic analyzer
 
-##Authors:
+## Authors:
 - Bolaños Guerrero Julián  
 - Castillo Soto Jacqueline  
 - Galindo Reyes Daniel Adrian  
